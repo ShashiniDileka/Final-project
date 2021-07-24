@@ -1,4 +1,4 @@
-/*import {
+import {
     USER_REGISTER_FAIL,
     USER_REGISTER_REQUEST,
     USER_REGISTER_SUCCESS,
@@ -34,4 +34,4 @@
       default:
         return state;
     }
-  };*/
+  };

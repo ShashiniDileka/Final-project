@@ -1,4 +1,4 @@
-/*import Axios from 'axios';
+import Axios from 'axios';
 import {
   USER_REGISTER_FAIL,
   USER_REGISTER_REQUEST,
@@ -52,4 +52,4 @@ export const signout = () => (dispatch) => {
   localStorage.removeItem('userInfo');
   localStorage.removeItem('cartItems');
   dispatch({ type: USER_SIGNOUT });
-};*/
+};
