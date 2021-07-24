@@ -1,3 +1,3 @@
-export default {
-    MONGODB_URL:process.env.MONGODB_URL ||'mongodb://localhost/final-project-ShashiniDileka' 
-}
+//export default {
+//MONGODB_URL:process.env.MONGODB_URL ||'mongodb://localhost/final-project-ShashiniDileka' 
+//}

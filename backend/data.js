@@ -1,13 +1,28 @@
+import bcrypt from 'bcrypt';
 
 const data={
+  users: [
+    {
+      name: 'shashini',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'sama',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
 
   products: [
     {
       _id:'1',
-      name: 'Nike Slim Shirt',
+      name: 'Carrot',
       category: 'Shirts',
       image: '/images/d1.png',
-      price: 120,
+      price: 1,
       countInStock: 10,
       brand: 'Nike',
       rating: 4.5,
@@ -16,10 +31,10 @@ const data={
     },
     {
       _id:'2',
-      name: 'Adidas Fit Shirt',
+      name: 'Banana',
       category: 'Shirts',
       image: '/images/d2.jpg',
-      price: 100,
+      price: 3 ,
       countInStock: 20,
       brand: 'Adidas',
       rating: 4.0,
@@ -28,10 +43,10 @@ const data={
     },
     {
       _id:'3',
-      name: 'Lacoste Free Shirt',
+      name: 'Apple',
       category: 'Shirts',
       image: '/images/d9.jpg',
-      price: 220,
+      price: 2,
       countInStock: 0,
       brand: 'Lacoste',
       rating: 4.8,
@@ -40,10 +55,10 @@ const data={
     },
     {
         _id:'4',
-      name: 'Nike Slim Pant',
+      name: 'Nipuna Kiri Samba',
       category: 'Pants',
       image: '/images/d11.png',
-      price: 78,
+      price: 8,
       countInStock: 15,
       brand: 'Nike',
       rating: 4.5,
@@ -52,10 +67,10 @@ const data={
     },
     {
         _id:'5',
-      name: 'Puma Slim Pant',
+      name: 'Anchor Full Cream Milk Powder',
       category: 'Pants',
       image: '/images/d13.jpeg',
-      price: 65,
+      price: 1,
       countInStock: 5,
       brand: 'Puma',
       rating: 4.5,
@@ -64,10 +79,10 @@ const data={
     },
     {
       _id:'6',
-      name: 'Adidas Fit Pant',
+      name: 'Revello Chocolate',
       category: 'Pants',
       image: '/images/d14.jpeg',
-      price: 139,
+      price: 13,
       countInStock: 12,
       brand: 'Adidas',
       rating: 4.5,
@@ -77,10 +92,10 @@ const data={
 
     {
         _id:'7',
-      name: 'Puma Slim Pant',
+      name: 'Kritz Biscuits',
       category: 'Pants',
       image: '/images/d15.jpg',
-      price: 65,
+      price: 5,
       countInStock: 5,
       brand: 'Puma',
       rating: 4.5,
@@ -89,10 +104,10 @@ const data={
     },
     {
         _id:'8',
-      name: 'Puma Slim Pant',
+      name: 'Cream Cracker',
       category: 'Pants',
       image: '/images/d16.jpeg',
-      price: 65,
+      price: 6,
       countInStock: 5,
       brand: 'Puma',
       rating: 4.5,
