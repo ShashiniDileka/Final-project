@@ -1,26 +1,11 @@
-import bcrypt from 'bcrypt';
-
 const data={
-  users: [
-    {
-      name: 'shashini',
-      email: 'admin@example.com',
-      password: bcrypt.hashSync('1234', 8),
-      isAdmin: true,
-    },
-    {
-      name: 'sama',
-      email: 'user@example.com',
-      password: bcrypt.hashSync('1234', 8),
-      isAdmin: false,
-    },
-  ],
+  
 
   products: [
     {
       _id:'1',
       name: 'Carrot',
-      category: 'Shirts',
+      category: 'Vegetables and fruits',
       image: '/images/d1.png',
       price: 1,
       countInStock: 10,
@@ -32,7 +17,7 @@ const data={
     {
       _id:'2',
       name: 'Banana',
-      category: 'Shirts',
+      category: 'Vegetables and fruits',
       image: '/images/d2.jpg',
       price: 3 ,
       countInStock: 20,
@@ -44,7 +29,7 @@ const data={
     {
       _id:'3',
       name: 'Apple',
-      category: 'Shirts',
+      category: 'Vegetables and fruits',
       image: '/images/d9.jpg',
       price: 2,
       countInStock: 0,
@@ -56,7 +41,7 @@ const data={
     {
         _id:'4',
       name: 'Nipuna Kiri Samba',
-      category: 'Pants',
+      category: 'others',
       image: '/images/d11.png',
       price: 8,
       countInStock: 15,
@@ -68,7 +53,7 @@ const data={
     {
         _id:'5',
       name: 'Anchor Full Cream Milk Powder',
-      category: 'Pants',
+      category: 'others',
       image: '/images/d13.jpeg',
       price: 1,
       countInStock: 5,
@@ -80,7 +65,7 @@ const data={
     {
       _id:'6',
       name: 'Revello Chocolate',
-      category: 'Pants',
+      category: 'others',
       image: '/images/d14.jpeg',
       price: 13,
       countInStock: 12,
@@ -93,7 +78,7 @@ const data={
     {
         _id:'7',
       name: 'Kritz Biscuits',
-      category: 'Pants',
+      category: 'others',
       image: '/images/d15.jpg',
       price: 5,
       countInStock: 5,
@@ -105,7 +90,7 @@ const data={
     {
         _id:'8',
       name: 'Cream Cracker',
-      category: 'Pants',
+      category: 'others',
       image: '/images/d16.jpeg',
       price: 6,
       countInStock: 5,
