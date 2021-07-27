@@ -2,14 +2,14 @@ import{applyMiddleware,compose, createStore,combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import { cartReducer } from './reducers/cartReducers';
 import { productDetailsReducer, productListReducer } from './reducers/productReducers';
-import {userDetailsReducer,userRegisterReducer,userSigninReducer,userUpdateProfileReducer,} from './reducers/userReducers';
+import {userDetailsReducer,userRegisterReducer,userSigninReducer,userUpdateProfileReducer,} from './reducers/userReducer';
 import {
   orderCreateReducer,
   orderDetailsReducer,
   orderMineListReducer,
   orderPayReducer,
   
-} from './reducers/orderReducers';
+} from './reducers/orderReducer';
   
 
 const initialState = {

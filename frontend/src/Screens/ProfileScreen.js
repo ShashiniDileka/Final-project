@@ -40,10 +40,7 @@ export default function ProfileScreen() {
         dispatch(updateUserProfile({ userId: user._id, name, email, password }));
       }
     };
-  const submitHandler = (e) => {
-    e.preventDefault();
-    // dispatch update profile
-  };
+
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
